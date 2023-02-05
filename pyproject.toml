@@ -4,12 +4,16 @@ build-backend = "setuptools.build_meta"
 
 
 [project]
-name = "pretty_pdf"
+name = "prettypdf"
 version = "0.0.1"
 dependencies = [
-    "typer"
+    "typer",
+    "rich"
 ]
 
 
 [project.optional-dependencies]
 dev = ['pytest']
+
+[project.scripts]
+prettypdf = "prettypdf.main:app"
