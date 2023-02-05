@@ -1,6 +1,6 @@
 from typer.testing import CliRunner
 
-from prettypdf.main import app
+from .main import app
 from click.testing import Result
 
 runner = CliRunner()
